@@ -1,0 +1,9 @@
+nodes:
+  mongo:
+    type: mongo
+    uri: mongodb://valentina:h4s1p8k2@192.168.5.107/sibdataportal
+    namespace: sibdataportal.occurrence_dashboard
+  es:
+    type: elasticsearch
+    uri: http://localhost:9200/
+    namespace: sibdataportal.occurrence_dashboard

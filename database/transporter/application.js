@@ -1,0 +1,1 @@
+pipeline = Source({name:"mongo").save({name:"es")
