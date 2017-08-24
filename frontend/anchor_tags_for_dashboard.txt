@@ -1,0 +1,7 @@
+Etiquetas
+#especiesColombia: Biodiversidad en cifras
+#especiesPorReino: Número de especies por reino
+#especiesRegistrosPorDepartamento: Especies y registros por departamento
+#especiesAmenazadas: Especies amenazadas, obketo de comercio, inducidas e invasoras
+#cifrasPorGrupoTaxonomico: Cifras por grupo taxonómico
+#biodiversidadMundo: Biodiversidad en el mundo
