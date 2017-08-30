@@ -115,7 +115,81 @@
 		<div class="grupo">
 			<h2>animales <button onclick="showDivGraph(this)" class="masterTooltip" title="Cifras de animales"><img src="img/cifraicon.png" alt=""></img></button></h2>
 			
-		<!--aca iría la grapharea de un reino, despues del h2 -->
+			<div class="grapharea">
+					<div class="graficas">
+						<div class="titulogra">
+							<p>Animales</p>
+							<button onclick="hideDiv2(this)" class="xx masterTooltip" title="Cerrar" >x</button>
+							<h6>Representatividad</h6>
+						</div>
+						<div class="columnas">
+							<div class="col1">
+								<h3>General
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico hay en Colombia?"/>
+								</h3>
+								<div class="halfpie hprep">
+									<div id="donutanimales1b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie fprep" style="width: 200px; height: 200px;">
+									<div id="donutanimales1"></div>
+								</div>
+								<div class="pietext">
+									<h6>76.304</h6>
+									<p>Especies estimadas</p>
+								</div>
+								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
+								<div class="clear2"></div>
+								<div class="sibtit relleno">En SiB Colombia</div>
+								<p class="datossib">Especies:<b> 10.634</b></p>
+								<p class="datossib">Registros:<b> 998.067</b></p>
+							</div>
+							<div class="col1">
+								<h3>Amenaza
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico se encuentran amenazadas en Colombia?"/>
+								</h3>
+								<div class="halfpie">
+									<div id="donutanimales2b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie" style="width: 200px; height: 200px;">
+									<div id="donutanimales2"></div>
+								</div>
+								<div class="pietext">
+									<h6>481</h6>
+									<p>Especies estimadas</p>
+								</div>
+								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 60">CR</div>
+								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 159">EN</div>
+								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 262">VU</div>
+								<div class="clear"></div>
+								<div class="sibtit relleno2">En SiB Colombia</div>
+								<p class="datossib">Especies:<b> 264</b></p>
+								<p class="datossib">Registros:<b> 14.139</b></p>
+							</div>
+							<div class="col1">
+								<h3>CITES
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico son objeto de comercio en Colombia?"/>
+								</h3>
+								<div class="halfpie">
+									<div id="donutanimales3b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie" style="width: 200px; height: 200px;">
+									<div id="donutanimales3"></div>
+								</div>
+								<div class="pietext">
+									<h6>683</h6>
+									<p>Especies estimadas</p>
+								</div>
+								<div class="cite1 masterTooltip" title="Especies estimadas en apéndice I: 59">I</div>
+								<div class="cite2 masterTooltip" title="Especies estimadas en apéndice II: 593">II</div>
+								<div class="cite3 masterTooltip" title="Especies estimadas en apéndice III: 31">III</div>
+								<div class="clear"></div>
+								<div class="sibtit">En SiB Colombia</div>
+								<p class="datossib">Especies:<b> 477</b></p>
+								<p class="datossib">Registros:<b> 60.463</b></p>
+							</div>
+						</div>
+					</div>
+				</div>
 
 			<h3>vertebrados</h3>
 
@@ -878,22 +952,29 @@
 						<img src="img/escarabajos.png" alt=""></img>
 						<h6>65.000</h6>
 					</button>
-					<!--<div class="sublinks">
-						<button title="Escarabajos" class="masterTooltip"></button>
-						<button title="Mariposas" class="masterTooltip"></button>
-						<button title="Hormigas" class="masterTooltip"></button>
-						<button title="Abejas" class="masterTooltip"></button>
-						<button title="Dípteros" class="masterTooltip"></button>
-					</div>-->
+					<div class="sublinks">
+						<button title="Escarabajos" class="escarabajos masterTooltip"></button>
+						<button title="Mariposas" class="mariposas masterTooltip"></button>
+						<button title="Hormigas" class="hormigas masterTooltip"></button>
+						<button title="Abejas" class="abejas masterTooltip"></button>
+						<button title="Dípteros" class="dipteros masterTooltip"></button>
+					</div>
 				</div>
 
-				<div class="grapharea">
+				<div class="grapharea insectos">
 					<div class="graficas">
 						<div class="titulogra">
 							<img src="img/escarabajos.png" alt=""></img>
 							<p>Insectos</p>
 							<button onclick="hideDiv2(this)" class="xx masterTooltip" title="Cerrar" >x</button>
 							<h6>Representatividad</h6>
+						</div>
+						<div class="subgroups">
+							<button class="escarabajos masterTooltip" title="Escarabajos"><img src="img/escarabajos.png" alt=""></img></button>
+							<button class="mariposas masterTooltip" title="Mariposas"><img src="img/mariposas.png" alt=""></img></button>
+							<button class="hormigas masterTooltip" title="Hormigas"><img src="img/hormigas.png" alt=""></img></button>
+							<button class="abejas masterTooltip" title="Abejas"><img src="img/abejas.png" alt=""></img></button>
+							<button class="dipteros masterTooltip" title="Dípteros"><img src="img/dipteros.png" alt=""></img></button>
 						</div>
 						<div class="columnas">
 							<div class="col1">
@@ -984,6 +1065,516 @@
 									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
 									<a href="https://www.researchgate.net/publication/262178951_Mamiferos_marinos_migratorios_en_Colombia" target="_blank"><b>47.</b> Amaya-Espinel, J. D. & L. A. Zapata (Editores). 2014. Guía de las especies migratorias de la biodiversidad en Colombia. Insectos, murciélagos, tortugas marinas, mamíferos marinos y dulceacuícolas. Vol. 3. Ministerio de Ambiente y Desarrollo Sostenible / WWF-Colombia. Bogotá, D.C. Colombia. 370 p. Consultado marzo 2017.</a>
 								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="grapharea graph_escarabajos">
+					<div class="graficas">
+						<div class="titulogra">
+							<img src="img/escarabajos.png" alt=""></img>
+							<p>Escarabajos</p>
+							<button onclick="hideDiv2(this)" class="xx masterTooltip" title="Cerrar" >x</button>
+							<button class="back insectosback masterTooltip" title="Atrás"></button>
+							<h6>Representatividad</h6>
+						</div>
+						<div class="subgroups">
+							<button class="escarabajos masterTooltip" title="Escarabajos"><img src="img/escarabajos.png" alt=""></img></button>
+							<button class="mariposas masterTooltip" title="Mariposas"><img src="img/mariposas.png" alt=""></img></button>
+							<button class="hormigas masterTooltip" title="Hormigas"><img src="img/hormigas.png" alt=""></img></button>
+							<button class="abejas masterTooltip" title="Abejas"><img src="img/abejas.png" alt=""></img></button>
+							<button class="dipteros masterTooltip" title="Dípteros"><img src="img/dipteros.png" alt=""></img></button>
+						</div>
+						<div class="columnas">
+							<div class="col1">
+								<h3>General
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico hay en Colombia?"/>
+									<input type="button" name="ref" value="12" onclick="showDiv(this)" class="refbtn mt5"/>
+								</h3>
+								<div class="referencia">
+									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+									<a href="http://ciencias.bogota.unal.edu.co/fileadmin/content/icn/documentos/ABC_de_la_biodiversidad_Lopez-Arevalo_H.F._O._Montengro__L._F-_Lievano-Latorre2014.pdf" target="_blank"><b>14.</b> Chaves, M. E., y M. Santamaría. 2006. “Informe Nacional Sobre El Avance En El Conocimiento Y La Información de La Biodiversidad 1998-2004.” Bogotá, D. C. Consultado marzo 2017.</a>
+								</div>
+								<div class="halfpie hprep">
+									<div id="donutescarabajos1b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie fprep" style="width: 200px; height: 200px;">
+									<div id="donutescarabajos1"></div>
+								</div>
+								<div class="pietext">
+									<h6>7.000</h6>
+									<p>Especies estimadas</p>
+								</div>
+								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
+								<div class="clear2"></div>
+								<div class="sibtit relleno">En SiB Colombia</div>
+								<p class="datossib">Especies:<b> 320</b></p>
+								<p class="datossib">Registros:<b> 206.560</b></p>
+							</div>
+							<div class="col1">
+								<h3>Amenaza
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico se encuentran amenazadas en Colombia?"/>
+									<input type="button" name="ref" value="30" onclick="showDiv(this)" class="refbtn mt5"/>
+								</h3>
+								<div class="referencia">
+									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+									<a href="http://www.bio-nica.info/Biblioteca/Amat-Garcia2007LibrRojoInvertebrados.pdf" target="_blank"><p><b>30.</b> Amat-García, Germán, Gonzalo M. Andrade-C, y Eduardo Amat-García. 2007. Libro Rojo de Los Invertebrados Terrestres de Colombia. Serie Libros Rojos de Especies Amenazadas de Colombia. Libros Rojos de Especies Amenazadas de Colombia. Bogotá, D. C.: Instituto de Ciencias Naturales- Universidad Nacional de Colombia; Conservación Internacional Colombia; Instituto Alexander von Humboldt; Ministerio de Ambiente, Vivienda y Crédito Territorial. Consultado marzo 2017.</p></a>
+								</div>
+								<div class="halfpie">
+									<div id="donutescarabajos2b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie" style="width: 200px; height: 200px;">
+									<div id="donutescarabajos2"></div>
+								</div>
+								<div class="pietext">
+									<h6>5</h6>
+									<p>Especies estimadas</p>
+								</div>
+								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 0">CR</div>
+								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 1">EN</div>
+								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 4">VU</div>
+								<div class="clear"></div>
+								<div class="sibtit relleno2">En SiB Colombia</div>
+								<p class="datossib">Especies:<b> 1</b></p>
+								<p class="datossib">Registros:<b> 1</b></p>
+							</div>
+							<div class="col1">
+								<h3>CITES
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico son objeto de comercio en Colombia?"/>
+									<input type="button" name="ref" value="42" onclick="showDiv(this)" class="refbtn mt5"/>
+								</h3>
+								<div class="referencia">
+									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+									<a href="http://checklist.cites.org/" target="_blank"><b>42.</b> UNEP-WCMC (Comps.) 2015. The Checklist of CITES Species Website. CITES Secretariat, Geneva, Switzerland. Compiled by UNEP-WCMC, Cambridge, UK. Consultado marzo 2017.</a>
+								</div>
+								<div class="halfpie">
+									<div id="donutescarabajos3b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie" style="width: 200px; height: 200px;">
+									<div id="donutescarabajos3"></div>
+								</div>
+								<div class="pietext">
+									<h6>0</h6>
+									<p>Especies estimadas</p>
+								</div>
+								<div class="cite1 masterTooltip" title="Especies estimadas en apéndice I: 0">I</div>
+								<div class="cite2 masterTooltip" title="Especies estimadas en apéndice II: 0">II</div>
+								<div class="cite3 masterTooltip" title="Especies estimadas en apéndice III: 0">III</div>
+								<div class="clear"></div>
+								<div class="sibtit">En SiB Colombia</div>
+								<p class="datossib">Especies:<b> 0</b></p>
+								<p class="datossib">Registros:<b> 0</b></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="grapharea graph_mariposas">
+					<div class="graficas">
+						<div class="titulogra">
+							<img src="img/mariposas.png" alt=""></img>
+							<p>Mariposas</p>
+							<button onclick="hideDiv2(this)" class="xx masterTooltip" title="Cerrar" >x</button>
+							<button class="back insectosback masterTooltip" title="Atrás"></button>
+							<h6>Representatividad</h6>
+						</div>
+						<div class="subgroups">
+							<button class="escarabajos masterTooltip" title="Escarabajos"><img src="img/escarabajos.png" alt=""></img></button>
+							<button class="mariposas masterTooltip" title="Mariposas"><img src="img/mariposas.png" alt=""></img></button>
+							<button class="hormigas masterTooltip" title="Hormigas"><img src="img/hormigas.png" alt=""></img></button>
+							<button class="abejas masterTooltip" title="Abejas"><img src="img/abejas.png" alt=""></img></button>
+							<button class="dipteros masterTooltip" title="Dípteros"><img src="img/dipteros.png" alt=""></img></button>
+						</div>
+						<div class="columnas">
+							<div class="col1">
+								<h3>General
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico hay en Colombia?"/>
+									<input type="button" name="ref" value="12" onclick="showDiv(this)" class="refbtn mt5"/>
+								</h3>
+								<div class="referencia">
+									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+									<a href="http://www.accefyn.org.co/revista/Vol_35/137/492-508.pdf" target="_blank"><b>10.</b> Andrade-C, Gonzalo M. 2011. “Estado de Conocimiento de La Biodiversidad En Colombia Y Sus Amenazas. Consideraciones Para Fortalecer La Interacción Ciencia-Política.” Revista de La Academia Colombiana de Ciencias 35 (137): 491–507. Consultado marzo 2017.</a>
+								</div>
+								<div class="halfpie hprep">
+									<div id="donutmariposas1b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie fprep" style="width: 200px; height: 200px;">
+									<div id="donutmariposas1"></div>
+								</div>
+								<div class="pietext">
+									<h6>3.274</h6>
+									<p>Especies estimadas</p>
+								</div>
+								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
+								<div class="clear2"></div>
+								<div class="sibtit relleno">En SiB Colombia</div>
+								<p class="datossib">Especies:<b> 1.269</b></p>
+								<p class="datossib">Registros:<b> 41.510</b></p>
+							</div>
+							<div class="col1">
+								<h3>Amenaza
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico se encuentran amenazadas en Colombia?"/>
+									<input type="button" name="ref" value="30" onclick="showDiv(this)" class="refbtn mt5"/>
+								</h3>
+								<div class="referencia">
+									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+									<a href="http://www.bio-nica.info/Biblioteca/Amat-Garcia2007LibrRojoInvertebrados.pdf" target="_blank"><p><b>30.</b> Amat-García, Germán, Gonzalo M. Andrade-C, y Eduardo Amat-García. 2007. Libro Rojo de Los Invertebrados Terrestres de Colombia. Serie Libros Rojos de Especies Amenazadas de Colombia. Libros Rojos de Especies Amenazadas de Colombia. Bogotá, D. C.: Instituto de Ciencias Naturales- Universidad Nacional de Colombia; Conservación Internacional Colombia; Instituto Alexander von Humboldt; Ministerio de Ambiente, Vivienda y Crédito Territorial. Consultado marzo 2017.</p></a>
+								</div>
+								<div class="halfpie">
+									<div id="donutmariposas2b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie" style="width: 200px; height: 200px;">
+									<div id="donutmariposas2"></div>
+								</div>
+								<div class="pietext">
+									<h6>12</h6>
+									<p>Especies estimadas</p>
+								</div>
+								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 1">CR</div>
+								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 6">EN</div>
+								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 5">VU</div>
+								<div class="clear"></div>
+								<div class="sibtit relleno2">En SiB Colombia</div>
+								<p class="datossib">Especies:<b> 1</b></p>
+								<p class="datossib">Registros:<b> 1</b></p>
+							</div>
+							<div class="col1">
+								<h3>CITES
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico son objeto de comercio en Colombia?"/>
+									<input type="button" name="ref" value="42" onclick="showDiv(this)" class="refbtn mt5"/>
+								</h3>
+								<div class="referencia">
+									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+									<a href="http://checklist.cites.org/" target="_blank"><b>42.</b> UNEP-WCMC (Comps.) 2015. The Checklist of CITES Species Website. CITES Secretariat, Geneva, Switzerland. Compiled by UNEP-WCMC, Cambridge, UK. Consultado marzo 2017.</a>
+								</div>
+								<div class="halfpie">
+									<div id="donutmariposas3b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie" style="width: 200px; height: 200px;">
+									<div id="donutmariposas3"></div>
+								</div>
+								<div class="pietext">
+									<h6>0</h6>
+									<p>Especies estimadas</p>
+								</div>
+								<div class="cite1 masterTooltip" title="Especies estimadas en apéndice I: 0">I</div>
+								<div class="cite2 masterTooltip" title="Especies estimadas en apéndice II: 0">II</div>
+								<div class="cite3 masterTooltip" title="Especies estimadas en apéndice III: 0">III</div>
+								<div class="clear"></div>
+								<div class="sibtit">En SiB Colombia</div>
+								<p class="datossib">Especies:<b> 0</b></p>
+								<p class="datossib">Registros:<b> 0</b></p>
+							</div>
+							<div class="xtradata">
+								<h3 class="endemicas">Endémicas: <b>350</b>
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="CIFRA ESTIMADA"/>
+									<input type="button" name="ref" value="18" onclick="showDiv(this)" class="refbtn mt5"/>
+								</h3>
+								<div class="referencia">
+									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+									<a href="http://catalogoplantasdecolombia.unal.edu.co/" target="_blank"><p><b>10.</b> Andrade-C, Gonzalo M. 2011. “Estado de Conocimiento de La Biodiversidad En Colombia Y Sus Amenazas. Consideraciones Para Fortalecer La Interacción Ciencia-Política.” Revista de La Academia Colombiana de Ciencias 35 (137): 491–507. Consultado marzo 2017.</p></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="grapharea graph_hormigas">
+					<div class="graficas">
+						<div class="titulogra">
+							<img src="img/hormigas.png" alt=""></img>
+							<p>Hormigas</p>
+							<button onclick="hideDiv2(this)" class="xx masterTooltip" title="Cerrar" >x</button>
+							<button class="back insectosback masterTooltip" title="Atrás"></button>
+							<h6>Representatividad</h6>
+						</div>
+						<div class="subgroups">
+							<button class="escarabajos masterTooltip" title="Escarabajos"><img src="img/escarabajos.png" alt=""></img></button>
+							<button class="mariposas masterTooltip" title="Mariposas"><img src="img/mariposas.png" alt=""></img></button>
+							<button class="hormigas masterTooltip" title="Hormigas"><img src="img/hormigas.png" alt=""></img></button>
+							<button class="abejas masterTooltip" title="Abejas"><img src="img/abejas.png" alt=""></img></button>
+							<button class="dipteros masterTooltip" title="Dípteros"><img src="img/dipteros.png" alt=""></img></button>
+						</div>
+						<div class="columnas">
+							<div class="col1">
+								<h3>General
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico hay en Colombia?"/>
+									<input type="button" name="ref" value="12" onclick="showDiv(this)" class="refbtn mt5"/>
+								</h3>
+								<div class="referencia">
+									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+									<a href="https://www.antweb.org/country.do?name=Colombia" target="_blank"><b>11.</b> AntWeb. 2017. “AntWeb: Ants of Colombia". Consultado marzo 2017.</a>
+								</div>
+								<div class="halfpie hprep">
+									<div id="donuthormigas1b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie fprep" style="width: 200px; height: 200px;">
+									<div id="donuthormigas1"></div>
+								</div>
+								<div class="pietext">
+									<h6>855</h6>
+									<p>Especies estimadas</p>
+								</div>
+								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
+								<div class="clear2"></div>
+								<div class="sibtit relleno">En SiB Colombia</div>
+								<p class="datossib">Especies:<b> 573</b></p>
+								<p class="datossib">Registros:<b> 40.913</b></p>
+							</div>
+							<div class="col1">
+								<h3>Amenaza
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico se encuentran amenazadas en Colombia?"/>
+									<input type="button" name="ref" value="30" onclick="showDiv(this)" class="refbtn mt5"/>
+								</h3>
+								<div class="referencia">
+									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+									<a href="http://www.bio-nica.info/Biblioteca/Amat-Garcia2007LibrRojoInvertebrados.pdf" target="_blank"><p><b>30.</b> Amat-García, Germán, Gonzalo M. Andrade-C, y Eduardo Amat-García. 2007. Libro Rojo de Los Invertebrados Terrestres de Colombia. Serie Libros Rojos de Especies Amenazadas de Colombia. Libros Rojos de Especies Amenazadas de Colombia. Bogotá, D. C.: Instituto de Ciencias Naturales- Universidad Nacional de Colombia; Conservación Internacional Colombia; Instituto Alexander von Humboldt; Ministerio de Ambiente, Vivienda y Crédito Territorial. Consultado marzo 2017.</p></a>
+								</div>
+								<div class="halfpie">
+									<div id="donuthormigas2b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie" style="width: 200px; height: 200px;">
+									<div id="donuthormigas2"></div>
+								</div>
+								<div class="pietext">
+									<h6>2</h6>
+									<p>Especies estimadas</p>
+								</div>
+								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 0">CR</div>
+								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 0">EN</div>
+								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 2">VU</div>
+								<div class="clear"></div>
+								<div class="sibtit relleno2">En SiB Colombia</div>
+								<p class="datossib">Especies:<b> 0</b></p>
+								<p class="datossib">Registros:<b> 0</b></p>
+							</div>
+							<div class="col1">
+								<h3>CITES
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico son objeto de comercio en Colombia?"/>
+									<input type="button" name="ref" value="42" onclick="showDiv(this)" class="refbtn mt5"/>
+								</h3>
+								<div class="referencia">
+									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+									<a href="http://checklist.cites.org/" target="_blank"><b>42.</b> UNEP-WCMC (Comps.) 2015. The Checklist of CITES Species Website. CITES Secretariat, Geneva, Switzerland. Compiled by UNEP-WCMC, Cambridge, UK. Consultado marzo 2017.</a>
+								</div>
+								<div class="halfpie">
+									<div id="donuthormigas3b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie" style="width: 200px; height: 200px;">
+									<div id="donuthormigas3"></div>
+								</div>
+								<div class="pietext">
+									<h6>0</h6>
+									<p>Especies estimadas</p>
+								</div>
+								<div class="cite1 masterTooltip" title="Especies estimadas en apéndice I: 0">I</div>
+								<div class="cite2 masterTooltip" title="Especies estimadas en apéndice II: 0">II</div>
+								<div class="cite3 masterTooltip" title="Especies estimadas en apéndice III: 0">III</div>
+								<div class="clear"></div>
+								<div class="sibtit">En SiB Colombia</div>
+								<p class="datossib">Especies:<b> 0</b></p>
+								<p class="datossib">Registros:<b> 0</b></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="grapharea graph_abejas">
+					<div class="graficas">
+						<div class="titulogra">
+							<img src="img/abejas.png" alt=""></img>
+							<p>Abejas</p>
+							<button onclick="hideDiv2(this)" class="xx masterTooltip" title="Cerrar" >x</button>
+							<button class="back insectosback masterTooltip" title="Atrás"></button>
+							<h6>Representatividad</h6>
+						</div>
+						<div class="subgroups">
+							<button class="escarabajos masterTooltip" title="Escarabajos"><img src="img/escarabajos.png" alt=""></img></button>
+							<button class="mariposas masterTooltip" title="Mariposas"><img src="img/mariposas.png" alt=""></img></button>
+							<button class="hormigas masterTooltip" title="Hormigas"><img src="img/hormigas.png" alt=""></img></button>
+							<button class="abejas masterTooltip" title="Abejas"><img src="img/abejas.png" alt=""></img></button>
+							<button class="dipteros masterTooltip" title="Dípteros"><img src="img/dipteros.png" alt=""></img></button>
+						</div>
+						<div class="columnas">
+							<div class="col1">
+								<h3>General
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico hay en Colombia?"/>
+									<input type="button" name="ref" value="12" onclick="showDiv(this)" class="refbtn mt5"/>
+								</h3>
+								<div class="referencia">
+									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+									<a href="https://www.researchgate.net/publication/315495801_Catalogue_of_Bees_Hymenoptera_Apoidea_in_the_Neotropical_Region" target="_blank"><b>16.</b> Melo, Gabriel. 2007. “Introductory Remarks.” En Catalogue of Bees (Hymenoptera, Apoidea) in the Neotropical Region, editado por Jesus Santiago Moure, Danúncia Urban, y Gabriel A. R. Melo, 1058. Sociedade Brasileira de Entomologia. Consultado marzo 2017.</a>
+								</div>
+								<div class="halfpie hprep">
+									<div id="donutabejas1b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie fprep" style="width: 200px; height: 200px;">
+									<div id="donutabejas1"></div>
+								</div>
+								<div class="pietext">
+									<h6>398</h6>
+									<p>Especies estimadas</p>
+								</div>
+								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
+								<div class="clear2"></div>
+								<div class="sibtit relleno">En SiB Colombia</div>
+								<p class="datossib">Especies:<b> 69</b></p>
+								<p class="datossib">Registros:<b> 1.780</b></p>
+							</div>
+							<div class="col1">
+								<h3>Amenaza
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico se encuentran amenazadas en Colombia?"/>
+									<input type="button" name="ref" value="30" onclick="showDiv(this)" class="refbtn mt5"/>
+								</h3>
+								<div class="referencia">
+									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+									<a href="http://www.bio-nica.info/Biblioteca/Amat-Garcia2007LibrRojoInvertebrados.pdf" target="_blank"><p><b>30.</b> Amat-García, Germán, Gonzalo M. Andrade-C, y Eduardo Amat-García. 2007. Libro Rojo de Los Invertebrados Terrestres de Colombia. Serie Libros Rojos de Especies Amenazadas de Colombia. Libros Rojos de Especies Amenazadas de Colombia. Bogotá, D. C.: Instituto de Ciencias Naturales- Universidad Nacional de Colombia; Conservación Internacional Colombia; Instituto Alexander von Humboldt; Ministerio de Ambiente, Vivienda y Crédito Territorial. Consultado marzo 2017.</p></a>
+								</div>
+								<div class="halfpie">
+									<div id="donutabejas2b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie" style="width: 200px; height: 200px;">
+									<div id="donutabejas2"></div>
+								</div>
+								<div class="pietext">
+									<h6>11</h6>
+									<p>Especies estimadas</p>
+								</div>
+								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 4">CR</div>
+								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 4">EN</div>
+								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 3">VU</div>
+								<div class="clear"></div>
+								<div class="sibtit relleno2">En SiB Colombia</div>
+								<p class="datossib">Especies:<b> 5</b></p>
+								<p class="datossib">Registros:<b> 22</b></p>
+							</div>
+							<div class="col1">
+								<h3>CITES
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico son objeto de comercio en Colombia?"/>
+									<input type="button" name="ref" value="42" onclick="showDiv(this)" class="refbtn mt5"/>
+								</h3>
+								<div class="referencia">
+									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+									<a href="http://checklist.cites.org/" target="_blank"><b>42.</b> UNEP-WCMC (Comps.) 2015. The Checklist of CITES Species Website. CITES Secretariat, Geneva, Switzerland. Compiled by UNEP-WCMC, Cambridge, UK. Consultado marzo 2017.</a>
+								</div>
+								<div class="halfpie">
+									<div id="donutabejas3b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie" style="width: 200px; height: 200px;">
+									<div id="donutabejas3"></div>
+								</div>
+								<div class="pietext">
+									<h6>0</h6>
+									<p>Especies estimadas</p>
+								</div>
+								<div class="cite1 masterTooltip" title="Especies estimadas en apéndice I: 0">I</div>
+								<div class="cite2 masterTooltip" title="Especies estimadas en apéndice II: 0">II</div>
+								<div class="cite3 masterTooltip" title="Especies estimadas en apéndice III: 0">III</div>
+								<div class="clear"></div>
+								<div class="sibtit">En SiB Colombia</div>
+								<p class="datossib">Especies:<b> 0</b></p>
+								<p class="datossib">Registros:<b> 0</b></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="grapharea graph_dipteros">
+					<div class="graficas">
+						<div class="titulogra">
+							<img src="img/dipteros.png" alt=""></img>
+							<p>Dípteros</p>
+							<button onclick="hideDiv2(this)" class="xx masterTooltip" title="Cerrar" >x</button>
+							<button class="back insectosback masterTooltip" title="Atrás"></button>
+							<h6>Representatividad</h6>
+						</div>
+						<div class="subgroups">
+							<button class="escarabajos masterTooltip" title="Escarabajos"><img src="img/escarabajos.png" alt=""></img></button>
+							<button class="mariposas masterTooltip" title="Mariposas"><img src="img/mariposas.png" alt=""></img></button>
+							<button class="hormigas masterTooltip" title="Hormigas"><img src="img/hormigas.png" alt=""></img></button>
+							<button class="abejas masterTooltip" title="Abejas"><img src="img/abejas.png" alt=""></img></button>
+							<button class="dipteros masterTooltip" title="Dípteros"><img src="img/dipteros.png" alt=""></img></button>
+						</div>
+						<div class="columnas">
+							<div class="col1">
+								<h3>General
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico hay en Colombia?"/>
+									<input type="button" name="ref" value="12" onclick="showDiv(this)" class="refbtn mt5"/>
+								</h3>
+								<div class="referencia">
+									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+									<a href="http://www.mapress.com/j/zt/article/view/zootaxa.4122.1.3" target="_blank"><b>17.</b> Wolff, Marta, Silvio S. Nihei, y Claudio J. B. D. E. Carvalho. 2016. “Catalogue of Diptera of Colombia: An Introduction.” Zootaxa 4122 (1): 001–949. Consultado marzo 2017.</a>
+								</div>
+								<div class="halfpie hprep">
+									<div id="donutdipteros1b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie fprep" style="width: 200px; height: 200px;">
+									<div id="donutdipteros1"></div>
+								</div>
+								<div class="pietext">
+									<h6>398</h6>
+									<p>Especies estimadas</p>
+								</div>
+								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
+								<div class="clear2"></div>
+								<div class="sibtit relleno">En SiB Colombia</div>
+								<p class="datossib">Especies:<b> 69</b></p>
+								<p class="datossib">Registros:<b> 1.780</b></p>
+							</div>
+							<div class="col1">
+								<h3>Amenaza
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico se encuentran amenazadas en Colombia?"/>
+									<input type="button" name="ref" value="30" onclick="showDiv(this)" class="refbtn mt5"/>
+								</h3>
+								<div class="referencia">
+									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+									<a href="http://www.bio-nica.info/Biblioteca/Amat-Garcia2007LibrRojoInvertebrados.pdf" target="_blank"><p><b>30.</b> Amat-García, Germán, Gonzalo M. Andrade-C, y Eduardo Amat-García. 2007. Libro Rojo de Los Invertebrados Terrestres de Colombia. Serie Libros Rojos de Especies Amenazadas de Colombia. Libros Rojos de Especies Amenazadas de Colombia. Bogotá, D. C.: Instituto de Ciencias Naturales- Universidad Nacional de Colombia; Conservación Internacional Colombia; Instituto Alexander von Humboldt; Ministerio de Ambiente, Vivienda y Crédito Territorial. Consultado marzo 2017.</p></a>
+								</div>
+								<div class="halfpie">
+									<div id="donutdipteros2b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie" style="width: 200px; height: 200px;">
+									<div id="donutdipteros2"></div>
+								</div>
+								<div class="pietext">
+									<h6>0</h6>
+									<p>Especies estimadas</p>
+								</div>
+								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 0">CR</div>
+								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 0">EN</div>
+								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 0">VU</div>
+								<div class="clear"></div>
+								<div class="sibtit relleno2">En SiB Colombia</div>
+								<p class="datossib">Especies:<b> 0</b></p>
+								<p class="datossib">Registros:<b> 0</b></p>
+							</div>
+							<div class="col1">
+								<h3>CITES
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico son objeto de comercio en Colombia?"/>
+									<input type="button" name="ref" value="42" onclick="showDiv(this)" class="refbtn mt5"/>
+								</h3>
+								<div class="referencia">
+									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+									<a href="http://checklist.cites.org/" target="_blank"><b>42.</b> UNEP-WCMC (Comps.) 2015. The Checklist of CITES Species Website. CITES Secretariat, Geneva, Switzerland. Compiled by UNEP-WCMC, Cambridge, UK. Consultado marzo 2017.</a>
+								</div>
+								<div class="halfpie">
+									<div id="donutdipteros3b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie" style="width: 200px; height: 200px;">
+									<div id="donutdipteros3"></div>
+								</div>
+								<div class="pietext">
+									<h6>0</h6>
+									<p>Especies estimadas</p>
+								</div>
+								<div class="cite1 masterTooltip" title="Especies estimadas en apéndice I: 0">I</div>
+								<div class="cite2 masterTooltip" title="Especies estimadas en apéndice II: 0">II</div>
+								<div class="cite3 masterTooltip" title="Especies estimadas en apéndice III: 0">III</div>
+								<div class="clear"></div>
+								<div class="sibtit">En SiB Colombia</div>
+								<p class="datossib">Especies:<b> 0</b></p>
+								<p class="datossib">Registros:<b> 0</b></p>
 							</div>
 						</div>
 					</div>
@@ -1097,10 +1688,10 @@
 						<img src="img/moluscosmarinos.png" alt=""></img>
 						<h6>1.900</h6>
 					</button>
-					<!--<div class="sublinks">
+					<div class="sublinks">
 						<button title="Marinos" class="masterTooltip"></button>
 						<button title="Terrestres" class="masterTooltip"></button>
-					</div>-->
+					</div>
 				</div>
 
 				<div class="grapharea">
@@ -1208,11 +1799,11 @@
 						<img src="img/decapodos-terrestres.png" alt=""></img>
 						<h6>1.352</h6>
 					</button>
-					<!--<div class="sublinks">
+					<div class="sublinks">
 						<button title="Marinos" class="masterTooltip"></button>
 						<button title="Terrestres" class="masterTooltip"></button>
 						<button title="Dulceacuícolas" class="masterTooltip"></button>
-					</div>-->
+					</div>
 				</div>
 
 				<div class="grapharea">
@@ -1622,6 +2213,81 @@
 			</div>
 
 			<h2>plantas <button onclick="showDivGraph(this)" class="masterTooltip" title="Cifras de plantas"><img src="img/cifraicon.png" alt=""></img></button></h2>
+			<div class="grapharea">
+					<div class="graficas">
+						<div class="titulogra">
+							<p>Plantas</p>
+							<button onclick="hideDiv2(this)" class="xx masterTooltip" title="Cerrar" >x</button>
+							<h6>Representatividad</h6>
+						</div>
+						<div class="columnas">
+							<div class="col1">
+								<h3>General
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico hay en Colombia?"/>
+								</h3>
+								<div class="halfpie hprep">
+									<div id="donutplantas1b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie fprep" style="width: 200px; height: 200px;">
+									<div id="donutplantas1"></div>
+								</div>
+								<div class="pietext">
+									<h6>25.163</h6>
+									<p>Especies estimadas</p>
+								</div>
+								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
+								<div class="clear2"></div>
+								<div class="sibtit relleno">En SiB Colombia</div>
+								<p class="datossib">Especies:<b> 20.299</b></p>
+								<p class="datossib">Registros:<b> 884.052</b></p>
+							</div>
+							<div class="col1">
+								<h3>Amenaza
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico se encuentran amenazadas en Colombia?"/>
+								</h3>
+								<div class="halfpie">
+									<div id="donutplantas2b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie" style="width: 200px; height: 200px;">
+									<div id="donutplantas2"></div>
+								</div>
+								<div class="pietext">
+									<h6>858</h6>
+									<p>Especies estimadas</p>
+								</div>
+								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 126">CR</div>
+								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 290">EN</div>
+								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 442">VU</div>
+								<div class="clear"></div>
+								<div class="sibtit relleno2">En SiB Colombia</div>
+								<p class="datossib">Especies:<b> 400</b></p>
+								<p class="datossib">Registros:<b> 13.327</b></p>
+							</div>
+							<div class="col1">
+								<h3>CITES
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico son objeto de comercio en Colombia?"/>
+								</h3>
+								<div class="halfpie">
+									<div id="donutplantas3b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie" style="width: 200px; height: 200px;">
+									<div id="donutplantas3"></div>
+								</div>
+								<div class="pietext">
+									<h6>831</h6>
+									<p>Especies estimadas</p>
+								</div>
+								<div class="cite1 masterTooltip" title="Especies estimadas en apéndice I: 7">I</div>
+								<div class="cite2 masterTooltip" title="Especies estimadas en apéndice II: 824">II</div>
+								<div class="cite3 masterTooltip" title="Especies estimadas en apéndice III: 0">III</div>
+								<div class="clear"></div>
+								<div class="sibtit">En SiB Colombia</div>
+								<p class="datossib">Especies:<b> 273</b></p>
+								<p class="datossib">Registros:<b> 23.108</b></p>
+							</div>
+						</div>
+					</div>
+				</div>
 			<div class="cards plantas">
 				<div class="card">
 					<button onclick="showDivGraph(this)">
@@ -2841,7 +3507,7 @@
 				</div>
 			</div>
 
-			<h2>algas <button onclick="showDivGraph(this)" class="masterTooltip" title="Cifras de algas"><img src="img/cifraicon.png" alt=""></img></button></h2>
+			<h2>algas <!--<button onclick="showDivGraph(this)" class="masterTooltip" title="Cifras de algas"><img src="img/cifraicon.png" alt=""></img></button>--></h2>
 			<div class="cards algas">
 				<div class="card">
 					<button onclick="showDivGraph(this)">
@@ -3232,7 +3898,7 @@
 				</div>
 			</div>
 
-			<h2>líquenes <button onclick="showDivGraph(this)" class="masterTooltip" title="Cifras de líquenes"><img src="img/cifraicon.png" alt=""></img></button></h2>
+			<h2>líquenes <!--<button onclick="showDivGraph(this)" class="masterTooltip" title="Cifras de líquenes"><img src="img/cifraicon.png" alt=""></img></button>--></h2>
 			<div class="cards liquenes">
 				<div class="card">
 					<button onclick="showDivGraph(this)">
@@ -3332,7 +3998,7 @@
 				</div>
 			</div>
 
-			<h2>hongos <button onclick="showDivGraph(this)" class="masterTooltip" title="Cifras de hongos"><img src="img/cifraicon.png" alt=""></img></button></h2>
+			<h2>hongos <!--<button onclick="showDivGraph(this)" class="masterTooltip" title="Cifras de hongos"><img src="img/cifraicon.png" alt=""></img></button>--></h2>
 			<div class="cards hongos">
 				<div class="card">
 					<button onclick="showDivGraph(this)">

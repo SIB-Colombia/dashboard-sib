@@ -267,6 +267,464 @@ function showDivGraph(currentElement) {
     chart.draw(data, options);
   }
 
+  // pie de literatura especies animales
+
+  google.charts.setOnLoadCallback(Chartanimales1);
+
+  function Chartanimales1() {
+    var data = google.visualization.arrayToDataTable([
+      ['Especies estimadas', 'Número de especies'],
+      ['Representatividad de especies', 76304]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.7,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '180', height: '180' },
+      pieSliceBorderColor: 'none',
+      slices: { 0: { color: '#4BC0C0' } },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { trigger: 'none' }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutanimales1')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(Chartanimales1b);
+
+  function Chartanimales1b() {
+    var data = google.visualization.arrayToDataTable([
+      ['Titulo', 'SiB'],
+      ['Especies con evidencia en el SiB Colombia', 10634],
+      ['Especies sin datos SiB Colombia', 65670]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.9,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '222', height: '222' },
+      pieSliceBorderColor: 'none',
+      slices: { 0: { color: '#2B4143' }, 1: { color: '#e7e9ed' } },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { isHtml: true, textStyle: { color: '#fff' } }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutanimales1b')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(Chartanimales2);
+
+  function Chartanimales2() {
+    var data = google.visualization.arrayToDataTable([
+      ['Especies estimadas', 'Número de especies'],
+      ['En peligro crítico', 60],
+      ['En peligro', 159],
+      ['Vulnerable', 262]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.7,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '180', height: '180' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#d51920' },
+        1: { color: '#f47d20' },
+        2: { color: '#f9ba1b' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { trigger: 'none' }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutanimales2')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(Chartanimales2b);
+
+  function Chartanimales2b() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Título');
+    data.addColumn('number', 'Especies');
+    data.addColumn({ type: 'string', role: 'tooltip', p: { html: true } });
+    data.addRows([
+      [
+        'En peligro crítico SiB',
+        42,
+        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 42</br>Registros: 3.578</div>'
+      ],
+      [
+        'En peligro SiB',
+        85,
+        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 85</br>Registros: 4.402</div>'
+      ],
+      [
+        'Vulnerable SiB',
+        137,
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 137</br>Registros: 6.159</div>'
+      ],
+      ['Especies sin datos SiB Colombia', 217, '']
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.9,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '222', height: '222' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#d51920' },
+        1: { color: '#f47d20' },
+        2: { color: '#f9ba1b' },
+        3: { color: '#e7e9ed' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { isHtml: true, textStyle: { color: '#fff' } }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutanimales2b')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(Chartanimales3);
+
+  function Chartanimales3() {
+    var data = google.visualization.arrayToDataTable([
+      ['Especies estimadas', 'Número de especies'],
+      ['Apéndice I', 59],
+      ['Apéndice II', 593],
+      ['Apéndice III', 31]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.7,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '180', height: '180' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#238ED9' },
+        1: { color: '#A2C754' },
+        2: { color: '#E8702F' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { trigger: 'none' }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutanimales3')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(Chartanimales3b);
+
+  function Chartanimales3b() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Título');
+    data.addColumn('number', 'Especies');
+    data.addColumn({ type: 'string', role: 'tooltip', p: { html: true } });
+    data.addRows([
+      [
+        'Apéndice I en SiB',
+        38,
+        '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 38</br>Registros: 2.386</div>'
+      ],
+      [
+        'Apéndice II en SiB',
+        410,
+        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 410</br>Registros: 53.891</div>'
+      ],
+      [
+        'Apéndice III en SiB',
+        29,
+        '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 29</br>Registros: 4.186</div>'
+      ],
+      ['Especies sin datos SiB Colombia', 206, '']
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.9,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '222', height: '222' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#238ED9' },
+        1: { color: '#A2C754' },
+        2: { color: '#E8702F' },
+        3: { color: '#e7e9ed' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { isHtml: true, textStyle: { color: '#fff' } }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutanimales3b')
+    );
+    chart.draw(data, options);
+  }
+
+  // pie de literatura especies plantas
+
+  google.charts.setOnLoadCallback(Chartplantas1);
+
+  function Chartplantas1() {
+    var data = google.visualization.arrayToDataTable([
+      ['Especies estimadas', 'Número de especies'],
+      ['Representatividad de especies', 25163]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.7,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '180', height: '180' },
+      pieSliceBorderColor: 'none',
+      slices: { 0: { color: '#4BC0C0' } },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { trigger: 'none' }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutplantas1')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(Chartplantas1b);
+
+  function Chartplantas1b() {
+    var data = google.visualization.arrayToDataTable([
+      ['Titulo', 'SiB'],
+      ['Especies con evidencia en el SiB Colombia', 20299],
+      ['Especies sin datos SiB Colombia', 4864]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.9,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '222', height: '222' },
+      pieSliceBorderColor: 'none',
+      slices: { 0: { color: '#2B4143' }, 1: { color: '#e7e9ed' } },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { isHtml: true, textStyle: { color: '#fff' } }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutplantas1b')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(Chartplantas2);
+
+  function Chartplantas2() {
+    var data = google.visualization.arrayToDataTable([
+      ['Especies estimadas', 'Número de especies'],
+      ['En peligro crítico', 126],
+      ['En peligro', 290],
+      ['Vulnerable', 442]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.7,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '180', height: '180' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#d51920' },
+        1: { color: '#f47d20' },
+        2: { color: '#f9ba1b' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { trigger: 'none' }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutplantas2')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(Chartplantas2b);
+
+  function Chartplantas2b() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Título');
+    data.addColumn('number', 'Especies');
+    data.addColumn({ type: 'string', role: 'tooltip', p: { html: true } });
+    data.addRows([
+      [
+        'En peligro crítico SiB',
+        56,
+        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 56</br>Registros: 989</div>'
+      ],
+      [
+        'En peligro SiB',
+        143,
+        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 143</br>Registros: 3.419</div>'
+      ],
+      [
+        'Vulnerable SiB',
+        201,
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 201</br>Registros: 8.919</div>'
+      ],
+      ['Especies sin datos SiB Colombia', 458, '']
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.9,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '222', height: '222' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#d51920' },
+        1: { color: '#f47d20' },
+        2: { color: '#f9ba1b' },
+        3: { color: '#e7e9ed' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { isHtml: true, textStyle: { color: '#fff' } }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutplantas2b')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(Chartplantas3);
+
+  function Chartplantas3() {
+    var data = google.visualization.arrayToDataTable([
+      ['Especies estimadas', 'Número de especies'],
+      ['Apéndice I', 7],
+      ['Apéndice II', 824],
+      ['Apéndice III', 0]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.7,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '180', height: '180' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#238ED9' },
+        1: { color: '#A2C754' },
+        2: { color: '#E8702F' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { trigger: 'none' }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutplantas3')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(Chartplantas3b);
+
+  function Chartplantas3b() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Título');
+    data.addColumn('number', 'Especies');
+    data.addColumn({ type: 'string', role: 'tooltip', p: { html: true } });
+    data.addRows([
+      [
+        'Apéndice I en SiB',
+        4,
+        '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 4</br>Registros: 22</div>'
+      ],
+      [
+        'Apéndice II en SiB',
+        269,
+        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 269</br>Registros: 23.086</div>'
+      ],
+      [
+        'Apéndice III en SiB',
+        0,
+        '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      ['Especies sin datos SiB Colombia', 558, '']
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.9,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '222', height: '222' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#238ED9' },
+        1: { color: '#A2C754' },
+        2: { color: '#E8702F' },
+        3: { color: '#e7e9ed' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { isHtml: true, textStyle: { color: '#fff' } }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutplantas3b')
+    );
+    chart.draw(data, options);
+  }
+
   // pie de literatura especies aves
 
   google.charts.setOnLoadCallback(Chartave1);
@@ -7633,6 +8091,1178 @@ $('.pecesd').on('click', function() {
 
     var chart = new google.visualization.PieChart(
       document.getElementById('donutpecesd2b')
+    );
+    chart.draw(data, options);
+  }
+});
+
+//funciones graficas de insectos tercer nivel
+
+$('.insectosback').on('click', function() {
+  $('.grapharea').css('display', 'none');
+  $('.insectos').css('display', 'block');
+});
+
+$('.escarabajos').on('click', function() {
+  $('.grapharea').css('display', 'none');
+  $('.graph_escarabajos').css('display', 'block');
+
+  // pie de literatura especies escarabajos
+  google.charts.setOnLoadCallback(ChartinsectosEscarabajos1);
+
+  function ChartinsectosEscarabajos1() {
+    var data = google.visualization.arrayToDataTable([
+      ['Especies estimadas', 'Número de especies'],
+      ['Representatividad de especies', 7000]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.7,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '180', height: '180' },
+      pieSliceBorderColor: 'none',
+      slices: { 0: { color: '#4BC0C0' } },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { trigger: 'none' }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutescarabajos1')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartinsectosEscarabajos1b);
+
+  function ChartinsectosEscarabajos1b() {
+    var data = google.visualization.arrayToDataTable([
+      ['Titulo', 'SiB'],
+      ['Especies con evidencia en el SiB Colombia', 320],
+      ['Especies sin datos SiB Colombia', 6680]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.9,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '222', height: '222' },
+      pieSliceBorderColor: 'none',
+      slices: { 0: { color: '#2B4143' }, 1: { color: '#e7e9ed' } },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { isHtml: true, textStyle: { color: '#fff' } }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutescarabajos1b')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartinsectosEscarabajos2);
+
+  function ChartinsectosEscarabajos2() {
+    var data = google.visualization.arrayToDataTable([
+      ['Especies estimadas', 'Número de especies'],
+      ['En peligro crítico', 0],
+      ['En peligro', 1],
+      ['Vulnerable', 4]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.7,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '180', height: '180' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#d51920' },
+        1: { color: '#f47d20' },
+        2: { color: '#f9ba1b' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { trigger: 'none' }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutescarabajos2')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartinsectosEscarabajos2b);
+
+  function ChartinsectosEscarabajos2b() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Título');
+    data.addColumn('number', 'Especies');
+    data.addColumn({ type: 'string', role: 'tooltip', p: { html: true } });
+    data.addRows([
+      [
+        'En peligro crítico SiB',
+        0,
+        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      [
+        'En peligro SiB',
+        0,
+        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      [
+        'Vulnerable SiB',
+        1,
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 1</br>Registros: 1</div>'
+      ],
+      ['Especies sin datos SiB Colombia', 4, '']
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.9,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '222', height: '222' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#d51920' },
+        1: { color: '#f47d20' },
+        2: { color: '#f9ba1b' },
+        3: { color: '#e7e9ed' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { isHtml: true, textStyle: { color: '#fff' } }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutescarabajos2b')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartinsectosEscarabajos3);
+
+  function ChartinsectosEscarabajos3() {
+    var data = google.visualization.arrayToDataTable([
+      ['Especies estimadas', 'Número de especies'],
+      ['Apéndice I', 0],
+      ['Apéndice II', 0],
+      ['Apéndice III', 0]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.7,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '180', height: '180' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#238ED9' },
+        1: { color: '#A2C754' },
+        2: { color: '#E8702F' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { trigger: 'none' }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutescarabajos3')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartinsectosEscarabajos3b);
+
+  function ChartinsectosEscarabajos3b() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Título');
+    data.addColumn('number', 'Especies');
+    data.addColumn({ type: 'string', role: 'tooltip', p: { html: true } });
+    data.addRows([
+      [
+        'Apéndice I en SiB',
+        0,
+        '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      [
+        'Apéndice II en SiB',
+        0,
+        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      [
+        'Apéndice III en SiB',
+        0,
+        '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      ['Especies sin datos SiB Colombia', 0, '']
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.9,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '222', height: '222' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#238ED9' },
+        1: { color: '#A2C754' },
+        2: { color: '#E8702F' },
+        3: { color: '#e7e9ed' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { isHtml: true, textStyle: { color: '#fff' } }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutescarabajos3b')
+    );
+    chart.draw(data, options);
+  }
+});
+
+$('.mariposas').on('click', function() {
+  $('.grapharea').css('display', 'none');
+  $('.graph_mariposas').css('display', 'block');
+
+  // pie de literatura especies mariposas
+  google.charts.setOnLoadCallback(ChartinsectosMariposas1);
+
+  function ChartinsectosMariposas1() {
+    var data = google.visualization.arrayToDataTable([
+      ['Especies estimadas', 'Número de especies'],
+      ['Representatividad de especies', 3274]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.7,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '180', height: '180' },
+      pieSliceBorderColor: 'none',
+      slices: { 0: { color: '#4BC0C0' } },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { trigger: 'none' }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutmariposas1')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartinsectosMariposas1b);
+
+  function ChartinsectosMariposas1b() {
+    var data = google.visualization.arrayToDataTable([
+      ['Titulo', 'SiB'],
+      ['Especies con evidencia en el SiB Colombia', 1269],
+      ['Especies sin datos SiB Colombia', 2005]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.9,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '222', height: '222' },
+      pieSliceBorderColor: 'none',
+      slices: { 0: { color: '#2B4143' }, 1: { color: '#e7e9ed' } },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { isHtml: true, textStyle: { color: '#fff' } }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutmariposas1b')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartinsectosMariposas2);
+
+  function ChartinsectosMariposas2() {
+    var data = google.visualization.arrayToDataTable([
+      ['Especies estimadas', 'Número de especies'],
+      ['En peligro crítico', 1],
+      ['En peligro', 6],
+      ['Vulnerable', 5]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.7,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '180', height: '180' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#d51920' },
+        1: { color: '#f47d20' },
+        2: { color: '#f9ba1b' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { trigger: 'none' }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutmariposas2')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartinsectosMariposas2b);
+
+  function ChartinsectosMariposas2b() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Título');
+    data.addColumn('number', 'Especies');
+    data.addColumn({ type: 'string', role: 'tooltip', p: { html: true } });
+    data.addRows([
+      [
+        'En peligro crítico SiB',
+        0,
+        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      [
+        'En peligro SiB',
+        1,
+        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 1</br>Registros: 1</div>'
+      ],
+      [
+        'Vulnerable SiB',
+        0,
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      ['Especies sin datos SiB Colombia', 11, '']
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.9,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '222', height: '222' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#d51920' },
+        1: { color: '#f47d20' },
+        2: { color: '#f9ba1b' },
+        3: { color: '#e7e9ed' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { isHtml: true, textStyle: { color: '#fff' } }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutmariposas2b')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartinsectosMariposas3);
+
+  function ChartinsectosMariposas3() {
+    var data = google.visualization.arrayToDataTable([
+      ['Especies estimadas', 'Número de especies'],
+      ['Apéndice I', 0],
+      ['Apéndice II', 0],
+      ['Apéndice III', 0]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.7,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '180', height: '180' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#238ED9' },
+        1: { color: '#A2C754' },
+        2: { color: '#E8702F' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { trigger: 'none' }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutmariposas3')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartinsectosMariposas3b);
+
+  function ChartinsectosMariposas3b() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Título');
+    data.addColumn('number', 'Especies');
+    data.addColumn({ type: 'string', role: 'tooltip', p: { html: true } });
+    data.addRows([
+      [
+        'Apéndice I en SiB',
+        0,
+        '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      [
+        'Apéndice II en SiB',
+        0,
+        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      [
+        'Apéndice III en SiB',
+        0,
+        '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      ['Especies sin datos SiB Colombia', 0, '']
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.9,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '222', height: '222' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#238ED9' },
+        1: { color: '#A2C754' },
+        2: { color: '#E8702F' },
+        3: { color: '#e7e9ed' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { isHtml: true, textStyle: { color: '#fff' } }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutmariposas3b')
+    );
+    chart.draw(data, options);
+  }
+});
+
+$('.hormigas').on('click', function() {
+  $('.grapharea').css('display', 'none');
+  $('.graph_hormigas').css('display', 'block');
+
+  // pie de literatura especies hormigas
+  google.charts.setOnLoadCallback(ChartinsectosHormigas1);
+
+  function ChartinsectosHormigas1() {
+    var data = google.visualization.arrayToDataTable([
+      ['Especies estimadas', 'Número de especies'],
+      ['Representatividad de especies', 855]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.7,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '180', height: '180' },
+      pieSliceBorderColor: 'none',
+      slices: { 0: { color: '#4BC0C0' } },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { trigger: 'none' }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donuthormigas1')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartinsectosHormigas1b);
+
+  function ChartinsectosHormigas1b() {
+    var data = google.visualization.arrayToDataTable([
+      ['Titulo', 'SiB'],
+      ['Especies con evidencia en el SiB Colombia', 573],
+      ['Especies sin datos SiB Colombia', 282]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.9,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '222', height: '222' },
+      pieSliceBorderColor: 'none',
+      slices: { 0: { color: '#2B4143' }, 1: { color: '#e7e9ed' } },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { isHtml: true, textStyle: { color: '#fff' } }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donuthormigas1b')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartinsectosHormigas2);
+
+  function ChartinsectosHormigas2() {
+    var data = google.visualization.arrayToDataTable([
+      ['Especies estimadas', 'Número de especies'],
+      ['En peligro crítico', 0],
+      ['En peligro', 0],
+      ['Vulnerable', 2]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.7,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '180', height: '180' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#d51920' },
+        1: { color: '#f47d20' },
+        2: { color: '#f9ba1b' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { trigger: 'none' }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donuthormigas2')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartinsectosHormigas2b);
+
+  function ChartinsectosHormigas2b() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Título');
+    data.addColumn('number', 'Especies');
+    data.addColumn({ type: 'string', role: 'tooltip', p: { html: true } });
+    data.addRows([
+      [
+        'En peligro crítico SiB',
+        0,
+        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      [
+        'En peligro SiB',
+        0,
+        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      [
+        'Vulnerable SiB',
+        0,
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      ['Especies sin datos SiB Colombia', 2, '']
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.9,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '222', height: '222' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#d51920' },
+        1: { color: '#f47d20' },
+        2: { color: '#f9ba1b' },
+        3: { color: '#e7e9ed' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { isHtml: true, textStyle: { color: '#fff' } }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donuthormigas2b')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartinsectosHormigas3);
+
+  function ChartinsectosHormigas3() {
+    var data = google.visualization.arrayToDataTable([
+      ['Especies estimadas', 'Número de especies'],
+      ['Apéndice I', 0],
+      ['Apéndice II', 0],
+      ['Apéndice III', 0]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.7,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '180', height: '180' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#238ED9' },
+        1: { color: '#A2C754' },
+        2: { color: '#E8702F' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { trigger: 'none' }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donuthormigas3')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartinsectosHormigas3b);
+
+  function ChartinsectosHormigas3b() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Título');
+    data.addColumn('number', 'Especies');
+    data.addColumn({ type: 'string', role: 'tooltip', p: { html: true } });
+    data.addRows([
+      [
+        'Apéndice I en SiB',
+        0,
+        '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      [
+        'Apéndice II en SiB',
+        0,
+        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      [
+        'Apéndice III en SiB',
+        0,
+        '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      ['Especies sin datos SiB Colombia', 0, '']
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.9,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '222', height: '222' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#238ED9' },
+        1: { color: '#A2C754' },
+        2: { color: '#E8702F' },
+        3: { color: '#e7e9ed' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { isHtml: true, textStyle: { color: '#fff' } }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donuthormigas3b')
+    );
+    chart.draw(data, options);
+  }
+});
+
+$('.abejas').on('click', function() {
+  $('.grapharea').css('display', 'none');
+  $('.graph_abejas').css('display', 'block');
+
+  // pie de literatura especies hormigas
+  google.charts.setOnLoadCallback(ChartinsectosAbejas1);
+
+  function ChartinsectosAbejas1() {
+    var data = google.visualization.arrayToDataTable([
+      ['Especies estimadas', 'Número de especies'],
+      ['Representatividad de especies', 398]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.7,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '180', height: '180' },
+      pieSliceBorderColor: 'none',
+      slices: { 0: { color: '#4BC0C0' } },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { trigger: 'none' }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutabejas1')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartinsectosAbejas1b);
+
+  function ChartinsectosAbejas1b() {
+    var data = google.visualization.arrayToDataTable([
+      ['Titulo', 'SiB'],
+      ['Especies con evidencia en el SiB Colombia', 69],
+      ['Especies sin datos SiB Colombia', 329]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.9,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '222', height: '222' },
+      pieSliceBorderColor: 'none',
+      slices: { 0: { color: '#2B4143' }, 1: { color: '#e7e9ed' } },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { isHtml: true, textStyle: { color: '#fff' } }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutabejas1b')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartinsectosAbejas2);
+
+  function ChartinsectosAbejas2() {
+    var data = google.visualization.arrayToDataTable([
+      ['Especies estimadas', 'Número de especies'],
+      ['En peligro crítico', 4],
+      ['En peligro', 4],
+      ['Vulnerable', 3]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.7,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '180', height: '180' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#d51920' },
+        1: { color: '#f47d20' },
+        2: { color: '#f9ba1b' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { trigger: 'none' }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutabejas2')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartinsectosAbejas2b);
+
+  function ChartinsectosAbejas2b() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Título');
+    data.addColumn('number', 'Especies');
+    data.addColumn({ type: 'string', role: 'tooltip', p: { html: true } });
+    data.addRows([
+      [
+        'En peligro crítico SiB',
+        3,
+        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 3</br>Registros: 17</div>'
+      ],
+      [
+        'En peligro SiB',
+        0,
+        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      [
+        'Vulnerable SiB',
+        2,
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 2</br>Registros: 5</div>'
+      ],
+      ['Especies sin datos SiB Colombia', 6, '']
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.9,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '222', height: '222' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#d51920' },
+        1: { color: '#f47d20' },
+        2: { color: '#f9ba1b' },
+        3: { color: '#e7e9ed' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { isHtml: true, textStyle: { color: '#fff' } }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutabejas2b')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartinsectosAbejas3);
+
+  function ChartinsectosAbejas3() {
+    var data = google.visualization.arrayToDataTable([
+      ['Especies estimadas', 'Número de especies'],
+      ['Apéndice I', 0],
+      ['Apéndice II', 0],
+      ['Apéndice III', 0]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.7,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '180', height: '180' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#238ED9' },
+        1: { color: '#A2C754' },
+        2: { color: '#E8702F' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { trigger: 'none' }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutabejas3')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartinsectosAbejas3b);
+
+  function ChartinsectosAbejas3b() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Título');
+    data.addColumn('number', 'Especies');
+    data.addColumn({ type: 'string', role: 'tooltip', p: { html: true } });
+    data.addRows([
+      [
+        'Apéndice I en SiB',
+        0,
+        '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      [
+        'Apéndice II en SiB',
+        0,
+        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      [
+        'Apéndice III en SiB',
+        0,
+        '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      ['Especies sin datos SiB Colombia', 0, '']
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.9,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '222', height: '222' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#238ED9' },
+        1: { color: '#A2C754' },
+        2: { color: '#E8702F' },
+        3: { color: '#e7e9ed' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { isHtml: true, textStyle: { color: '#fff' } }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutabejas3b')
+    );
+    chart.draw(data, options);
+  }
+});
+
+$('.dipteros').on('click', function() {
+  $('.grapharea').css('display', 'none');
+  $('.graph_dipteros').css('display', 'block');
+
+  // pie de literatura especies hormigas
+  google.charts.setOnLoadCallback(ChartinsectosDipteros1);
+
+  function ChartinsectosDipteros1() {
+    var data = google.visualization.arrayToDataTable([
+      ['Especies estimadas', 'Número de especies'],
+      ['Representatividad de especies', 3153]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.7,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '180', height: '180' },
+      pieSliceBorderColor: 'none',
+      slices: { 0: { color: '#4BC0C0' } },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { trigger: 'none' }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutdipteros1')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartinsectosDipteros1b);
+
+  function ChartinsectosDipteros1b() {
+    var data = google.visualization.arrayToDataTable([
+      ['Titulo', 'SiB'],
+      ['Especies con evidencia en el SiB Colombia', 259],
+      ['Especies sin datos SiB Colombia', 2894]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.9,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '222', height: '222' },
+      pieSliceBorderColor: 'none',
+      slices: { 0: { color: '#2B4143' }, 1: { color: '#e7e9ed' } },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { isHtml: true, textStyle: { color: '#fff' } }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutdipteros1b')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartinsectosDipteros2);
+
+  function ChartinsectosDipteros2() {
+    var data = google.visualization.arrayToDataTable([
+      ['Especies estimadas', 'Número de especies'],
+      ['En peligro crítico', 0],
+      ['En peligro', 0],
+      ['Vulnerable', 0]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.7,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '180', height: '180' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#d51920' },
+        1: { color: '#f47d20' },
+        2: { color: '#f9ba1b' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { trigger: 'none' }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutdipteros2')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartinsectosDipteros2b);
+
+  function ChartinsectosDipteros2b() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Título');
+    data.addColumn('number', 'Especies');
+    data.addColumn({ type: 'string', role: 'tooltip', p: { html: true } });
+    data.addRows([
+      [
+        'En peligro crítico SiB',
+        0,
+        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      [
+        'En peligro SiB',
+        0,
+        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      [
+        'Vulnerable SiB',
+        0,
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      ['Especies sin datos SiB Colombia', 0, '']
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.9,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '222', height: '222' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#d51920' },
+        1: { color: '#f47d20' },
+        2: { color: '#f9ba1b' },
+        3: { color: '#e7e9ed' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { isHtml: true, textStyle: { color: '#fff' } }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutdipteros2b')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartinsectosDipteros3);
+
+  function ChartinsectosDipteros3() {
+    var data = google.visualization.arrayToDataTable([
+      ['Especies estimadas', 'Número de especies'],
+      ['Apéndice I', 0],
+      ['Apéndice II', 0],
+      ['Apéndice III', 0]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.7,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '180', height: '180' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#238ED9' },
+        1: { color: '#A2C754' },
+        2: { color: '#E8702F' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { trigger: 'none' }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutdipteros3')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartinsectosDipteros3b);
+
+  function ChartinsectosDipteros3b() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Título');
+    data.addColumn('number', 'Especies');
+    data.addColumn({ type: 'string', role: 'tooltip', p: { html: true } });
+    data.addRows([
+      [
+        'Apéndice I en SiB',
+        0,
+        '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      [
+        'Apéndice II en SiB',
+        0,
+        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      [
+        'Apéndice III en SiB',
+        0,
+        '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      ['Especies sin datos SiB Colombia', 0, '']
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.9,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '222', height: '222' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#238ED9' },
+        1: { color: '#A2C754' },
+        2: { color: '#E8702F' },
+        3: { color: '#e7e9ed' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { isHtml: true, textStyle: { color: '#fff' } }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutdipteros3b')
     );
     chart.draw(data, options);
   }
