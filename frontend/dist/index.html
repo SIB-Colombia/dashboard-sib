@@ -1955,19 +1955,24 @@
 						<h6>1.352</h6>
 					</button>
 					<div class="sublinks">
-						<button title="Marinos" class="masterTooltip"></button>
-						<button title="Terrestres" class="masterTooltip"></button>
-						<button title="Dulceacuícolas" class="masterTooltip"></button>
+						<button title="Marinos" class="decapodos_marinos masterTooltip"></button>
+						<button title="Terrestres" class="decapodos_terrestres masterTooltip"></button>
+						<button title="Dulceacuícolas" class="decapodos_dulceacuicolas masterTooltip"></button>
 					</div>
 				</div>
 
-				<div class="grapharea">
+				<div class="grapharea decapodos">
 					<div class="graficas">
 						<div class="titulogra">
 							<img src="img/decapodos-terrestres.png" alt=""></img>
 							<p>Decápodos</p>
 							<button onclick="hideDiv2(this)" class="xx masterTooltip" title="Cerrar" >x</button>
 							<h6>Representatividad</h6>
+						</div>
+						<div class="subgroups">
+							<button class="decapodos_marinos masterTooltip" title="Marinos"><img src="img/decapodos-marinos.png" alt=""></img></button>
+							<button class="decapodos_terrestres masterTooltip" title="Terrestres"><img src="img/decapodos-terrestres.png" alt=""></img></button>
+							<button class="decapodos_dulceacuicolas masterTooltip" title="Dulceacuícolas"><img src="img/decapodos-dulce.png" alt=""></img></button>
 						</div>
 						<div class="columnas">
 							<div class="col1">
@@ -2065,6 +2070,285 @@
 								<p class="datossib">Registros:<b> 0</b></p>
 							</div>
 							<div class="xtradata">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="grapharea graph_decapodos_marinos">
+					<div class="graficas">
+						<div class="titulogra">
+							<img src="img/decapodos-marinos.png" alt=""></img>
+							<p>Decápodos marinos</p>
+							<button onclick="hideDiv2(this)" class="xx masterTooltip" title="Cerrar" >x</button>
+							<button class="back decapodosback masterTooltip" title="Atrás"></button>
+							<h6>Representatividad</h6>
+						</div>
+						<div class="columnas">
+							<div class="col1">
+								<h3>General
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico hay en Colombia?"/>
+									<input type="button" name="ref" value="6" onclick="showDiv(this)" class="refbtn mt5"/>
+								</h3>
+								<div class="referencia">
+									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+									<a href="http://www.invemar.org.co/documents/10182/14479/ier_2015_baja.pdf/f225fda1-eb06-44ad-9d60-535909e85cc6" target="_blank"><b>6.</b> WINVEMAR. 2016. “Informe Del Estado de Los Ambientes Y Recursos Marinos Y Costeros En Colombia: Año 2015.” Santa Marta: Serie de Publicaciones Periódicas No. 3". Consultado marzo 2017.</a>
+								</div>
+								<div class="halfpie hprep">
+									<div id="donutdecapodosmarinos1b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie fprep" style="width: 200px; height: 200px;">
+									<div id="donutdecapodosmarinos1"></div>
+								</div>
+								<div class="pietext">
+									<h6>560</h6>
+									<p>Especies estimadas</p>
+								</div>
+								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
+								<div class="clear2"></div>
+								<div class="sibtit relleno">En SiB Colombia</div>
+								<p class="datossib">Especies:<b> En construcción</b></p>
+								<p class="datossib">Registros:<b> En construcción</b></p>
+							</div>
+							<div class="col1">
+								<h3>Amenaza
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico se encuentran amenazadas en Colombia?"/>
+									<input type="button" name="ref" value="29" onclick="showDiv(this)" class="refbtn mt5"/>
+								</h3>
+								<div class="referencia">
+									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+									<a href="http://www.invemar.org.co/redcostera1/invemar/docs/lrojo/LR_INVERTEBRADOS.pdf" target="_blank"><p><b>29.</b> Ardila, Néstor E., Gabriel R. Navas, y Javier O. Reyes. 2002. Libro Rojo de Invertebrados Marinos de Colombia. Serie Libros Rojos de Especies Amenazadas de Colombia. Libros Rojos de Especies Amenazadas de Colombia. Bogotá, D. C.: INVEMAR; Ministerio de Medio Ambiente. Consultado marzo 2017.</p></a>
+								</div>
+								<div class="halfpie">
+									<div id="donutdecapodosmarinos2b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie" style="width: 200px; height: 200px;">
+									<div id="donutdecapodosmarinos2"></div>
+								</div>
+								<div class="pietext">
+									<h6>7</h6>
+									<p>Especies estimadas</p>
+								</div>
+								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 0">CR</div>
+								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 0">EN</div>
+								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 7">VU</div>
+								<div class="clear"></div>
+								<div class="sibtit relleno2">En SiB Colombia</div>
+								<p class="datossib">Especies:<b> En construcción</b></p>
+								<p class="datossib">Registros:<b> En construcción</b></p>
+							</div>
+							<div class="col1">
+								<h3>CITES
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico son objeto de comercio en Colombia?"/>
+									<input type="button" name="ref" value="42" onclick="showDiv(this)" class="refbtn mt5"/>
+								</h3>
+								<div class="referencia">
+									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+									<a href="http://checklist.cites.org/" target="_blank"><b>42.</b> UNEP-WCMC (Comps.) 2015. The Checklist of CITES Species Website. CITES Secretariat, Geneva, Switzerland. Compiled by UNEP-WCMC, Cambridge, UK. Consultado marzo 2017.</a>
+								</div>
+								<div class="halfpie">
+									<div id="donutdecapodosmarinos3b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie" style="width: 200px; height: 200px;">
+									<div id="donutdecapodosmarinos3"></div>
+								</div>
+								<div class="pietext">
+									<h6>0</h6>
+									<p>Especies estimadas</p>
+								</div>
+								<div class="cite1 masterTooltip" title="Especies estimadas en apéndice I: 0">I</div>
+								<div class="cite2 masterTooltip" title="Especies estimadas en apéndice II: 0">II</div>
+								<div class="cite3 masterTooltip" title="Especies estimadas en apéndice III: 0">III</div>
+								<div class="clear"></div>
+								<div class="sibtit">En SiB Colombia</div>
+								<p class="datossib">Especies:<b> 0</b></p>
+								<p class="datossib">Registros:<b> 0</b></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="grapharea graph_decapodos_terrestres">
+					<div class="graficas">
+						<div class="titulogra">
+							<img src="img/decapodos-terrestres.png" alt=""></img>
+							<p>Decápodos terrestres</p>
+							<button onclick="hideDiv2(this)" class="xx masterTooltip" title="Cerrar" >x</button>
+							<button class="back decapodosback masterTooltip" title="Atrás"></button>
+							<h6>Representatividad</h6>
+						</div>
+						<div class="columnas">
+							<div class="col1">
+								<h3>General
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico hay en Colombia?"/>
+									<input type="button" name="ref" value="10" onclick="showDiv(this)" class="refbtn mt5"/>
+								</h3>
+								<div class="referencia">
+									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+									<a href="http://www.accefyn.org.co/revista/Vol_35/137/492-508.pdf" target="_blank"><b>10.</b> Andrade-C, Gonzalo M. 2011. “Estado de Conocimiento de La Biodiversidad En Colombia Y Sus Amenazas. Consideraciones Para Fortalecer La Interacción Ciencia-Política.” Revista de La Academia Colombiana de Ciencias 35 (137): 491–507. Consultado marzo 2017.</a>
+								</div>
+								<div class="halfpie hprep">
+									<div id="donutdecapodosterrestres1b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie fprep" style="width: 200px; height: 200px;">
+									<div id="donutdecapodosterrestres1"></div>
+								</div>
+								<div class="pietext">
+									<h6>688</h6>
+									<p>Especies estimadas</p>
+								</div>
+								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
+								<div class="clear2"></div>
+								<div class="sibtit relleno">En SiB Colombia</div>
+								<p class="datossib">Especies:<b> En construcción</b></p>
+								<p class="datossib">Registros:<b> En construcción</b></p>
+							</div>
+							<div class="col1">
+								<h3>Amenaza
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico se encuentran amenazadas en Colombia?"/>
+									<input type="button" name="ref" value="29" onclick="showDiv(this)" class="refbtn mt5"/>
+								</h3>
+								<div class="referencia">
+									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+									<a href="http://www.invemar.org.co/redcostera1/invemar/docs/lrojo/LR_INVERTEBRADOS.pdf" target="_blank"><p><b>29.</b> Ardila, Néstor E., Gabriel R. Navas, y Javier O. Reyes. 2002. Libro Rojo de Invertebrados Marinos de Colombia. Serie Libros Rojos de Especies Amenazadas de Colombia. Libros Rojos de Especies Amenazadas de Colombia. Bogotá, D. C.: INVEMAR; Ministerio de Medio Ambiente. Consultado marzo 2017.</p></a>
+								</div>
+								<div class="halfpie">
+									<div id="donutdecapodosterrestres2b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie" style="width: 200px; height: 200px;">
+									<div id="donutdecapodosterrestres2"></div>
+								</div>
+								<div class="pietext">
+									<h6>0</h6>
+									<p>Especies estimadas</p>
+								</div>
+								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 0">CR</div>
+								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 0">EN</div>
+								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 0">VU</div>
+								<div class="clear"></div>
+								<div class="sibtit relleno2">En SiB Colombia</div>
+								<p class="datossib">Especies:<b> 0</b></p>
+								<p class="datossib">Registros:<b> 0</b></p>
+							</div>
+							<div class="col1">
+								<h3>CITES
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico son objeto de comercio en Colombia?"/>
+									<input type="button" name="ref" value="42" onclick="showDiv(this)" class="refbtn mt5"/>
+								</h3>
+								<div class="referencia">
+									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+									<a href="http://checklist.cites.org/" target="_blank"><b>42.</b> UNEP-WCMC (Comps.) 2015. The Checklist of CITES Species Website. CITES Secretariat, Geneva, Switzerland. Compiled by UNEP-WCMC, Cambridge, UK. Consultado marzo 2017.</a>
+								</div>
+								<div class="halfpie">
+									<div id="donutdecapodosterrestres3b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie" style="width: 200px; height: 200px;">
+									<div id="donutdecapodosterrestres3"></div>
+								</div>
+								<div class="pietext">
+									<h6>0</h6>
+									<p>Especies estimadas</p>
+								</div>
+								<div class="cite1 masterTooltip" title="Especies estimadas en apéndice I: 0">I</div>
+								<div class="cite2 masterTooltip" title="Especies estimadas en apéndice II: 0">II</div>
+								<div class="cite3 masterTooltip" title="Especies estimadas en apéndice III: 0">III</div>
+								<div class="clear"></div>
+								<div class="sibtit">En SiB Colombia</div>
+								<p class="datossib">Especies:<b> 0</b></p>
+								<p class="datossib">Registros:<b> 0</b></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="grapharea graph_decapodos_dulceacuicolas">
+					<div class="graficas">
+						<div class="titulogra">
+							<img src="img/decapodos-dulce.png" alt=""></img>
+							<p>Decápodos dulceacuícolas</p>
+							<button onclick="hideDiv2(this)" class="xx masterTooltip" title="Cerrar" >x</button>
+							<button class="back decapodosback masterTooltip" title="Atrás"></button>
+							<h6>Representatividad</h6>
+						</div>
+						<div class="columnas">
+							<div class="col1">
+								<h3>General
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico hay en Colombia?"/>
+									<input type="button" name="ref" value="31" onclick="showDiv(this)" class="refbtn mt5"/>
+								</h3>
+								<div class="referencia">
+									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+									<a href="http://www.humboldt.org.co/es/estado-de-los-recursos-naturales/item/833-libro-rojo-cangrejos" target="_blank"><b>31.</b> Campos, Martha R., y Carlos A. Lasso. 2015. Libro Rojo de Los Cangrejos Dulceacuícolas de Colombia. Serie Libros Rojos de Especies Amenazadas de Colombia. Vol. 1. Libros Rojos de Especies Amenazadas de Colombia. Bogotá, D. C.: Instituto de Investigación de Recursos Biológicos Alexander von Humboldt (IAvH); Instituto de Ciencias Naturales de la Universidad Nacional de Colombia. doi:10.1017/CBO9781107415324.004. Consultado marzo 2017.</a>
+								</div>
+								<div class="halfpie hprep">
+									<div id="donutdecapodosdulce1b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie fprep" style="width: 200px; height: 200px;">
+									<div id="donutdecapodosdulce1"></div>
+								</div>
+								<div class="pietext">
+									<h6>104</h6>
+									<p>Especies estimadas</p>
+								</div>
+								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
+								<div class="clear2"></div>
+								<div class="sibtit relleno">En SiB Colombia</div>
+								<p class="datossib">Especies:<b> En construcción</b></p>
+								<p class="datossib">Registros:<b> En construcción</b></p>
+							</div>
+							<div class="col1">
+								<h3>Amenaza
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico se encuentran amenazadas en Colombia?"/>
+									<input type="button" name="ref" value="31" onclick="showDiv(this)" class="refbtn mt5"/>
+								</h3>
+								<div class="referencia">
+									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+									<a href="http://www.humboldt.org.co/es/estado-de-los-recursos-naturales/item/833-libro-rojo-cangrejos" target="_blank"><p><b>31.</b> Campos, Martha R., y Carlos A. Lasso. 2015. Libro Rojo de Los Cangrejos Dulceacuícolas de Colombia. Serie Libros Rojos de Especies Amenazadas de Colombia. Vol. 1. Libros Rojos de Especies Amenazadas de Colombia. Bogotá, D. C.: Instituto de Investigación de Recursos Biológicos Alexander von Humboldt (IAvH); Instituto de Ciencias Naturales de la Universidad Nacional de Colombia. doi:10.1017/CBO9781107415324.004. Consultado marzo 2017.</p></a>
+								</div>
+								<div class="halfpie">
+									<div id="donutdecapodosdulce2b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie" style="width: 200px; height: 200px;">
+									<div id="donutdecapodosdulce2"></div>
+								</div>
+								<div class="pietext">
+									<h6>26</h6>
+									<p>Especies estimadas</p>
+								</div>
+								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 0">CR</div>
+								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 25">EN</div>
+								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 1">VU</div>
+								<div class="clear"></div>
+								<div class="sibtit relleno2">En SiB Colombia</div>
+								<p class="datossib">Especies:<b> En construcción</b></p>
+								<p class="datossib">Registros:<b> En construcción</b></p>
+							</div>
+							<div class="col1">
+								<h3>CITES
+									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico son objeto de comercio en Colombia?"/>
+									<input type="button" name="ref" value="42" onclick="showDiv(this)" class="refbtn mt5"/>
+								</h3>
+								<div class="referencia">
+									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+									<a href="http://checklist.cites.org/" target="_blank"><b>42.</b> UNEP-WCMC (Comps.) 2015. The Checklist of CITES Species Website. CITES Secretariat, Geneva, Switzerland. Compiled by UNEP-WCMC, Cambridge, UK. Consultado marzo 2017.</a>
+								</div>
+								<div class="halfpie">
+									<div id="donutdecapodosdulce3b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie" style="width: 200px; height: 200px;">
+									<div id="donutdecapodosdulce3"></div>
+								</div>
+								<div class="pietext">
+									<h6>0</h6>
+									<p>Especies estimadas</p>
+								</div>
+								<div class="cite1 masterTooltip" title="Especies estimadas en apéndice I: 0">I</div>
+								<div class="cite2 masterTooltip" title="Especies estimadas en apéndice II: 0">II</div>
+								<div class="cite3 masterTooltip" title="Especies estimadas en apéndice III: 0">III</div>
+								<div class="clear"></div>
+								<div class="sibtit">En SiB Colombia</div>
+								<p class="datossib">Especies:<b> 0</b></p>
+								<p class="datossib">Registros:<b> 0</b></p>
 							</div>
 						</div>
 					</div>
