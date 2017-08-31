@@ -9268,6 +9268,479 @@ $('.dipteros').on('click', function() {
   }
 });
 
+//funciones graficas de moluscos tercer nivel
+
+$('.moluscosback').on('click', function() {
+  $('.grapharea').css('display', 'none');
+  $('.moluscos').css('display', 'block');
+});
+
+$('.marinos').on('click', function() {
+  $('.grapharea').css('display', 'none');
+  $('.graph_marinos').css('display', 'block');
+
+  // pie de literatura especies hormigas
+  google.charts.setOnLoadCallback(ChartmoluscosMarinos1);
+
+  function ChartmoluscosMarinos1() {
+    var data = google.visualization.arrayToDataTable([
+      ['Especies estimadas', 'Número de especies'],
+      ['Representatividad de especies', 1250]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.7,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '180', height: '180' },
+      pieSliceBorderColor: 'none',
+      slices: { 0: { color: '#4BC0C0' } },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { trigger: 'none' }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutmarinos1')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartmoluscosMarinos1b);
+
+  function ChartmoluscosMarinos1b() {
+    var data = google.visualization.arrayToDataTable([
+      ['Titulo', 'SiB'],
+      ['Especies con evidencia en el SiB Colombia', 0],
+      ['Especies sin datos SiB Colombia', 0]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.9,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '222', height: '222' },
+      pieSliceBorderColor: 'none',
+      slices: { 0: { color: '#2B4143' }, 1: { color: '#e7e9ed' } },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { isHtml: true, textStyle: { color: '#fff' } }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutmarinos1b')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartmoluscosMarinos2);
+
+  function ChartmoluscosMarinos2() {
+    var data = google.visualization.arrayToDataTable([
+      ['Especies estimadas', 'Número de especies'],
+      ['En peligro crítico', 0],
+      ['En peligro', 0],
+      ['Vulnerable', 14]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.7,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '180', height: '180' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#d51920' },
+        1: { color: '#f47d20' },
+        2: { color: '#f9ba1b' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { trigger: 'none' }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutmarinos2')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartmoluscosMarinos2b);
+
+  function ChartmoluscosMarinos2b() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Título');
+    data.addColumn('number', 'Especies');
+    data.addColumn({ type: 'string', role: 'tooltip', p: { html: true } });
+    data.addRows([
+      [
+        'En peligro crítico SiB',
+        0,
+        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      [
+        'En peligro SiB',
+        0,
+        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      [
+        'Vulnerable SiB',
+        0,
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: En construcción</br>Registros: En construcción</div>'
+      ],
+      ['Especies sin datos SiB Colombia', 0, '']
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.9,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '222', height: '222' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#d51920' },
+        1: { color: '#f47d20' },
+        2: { color: '#f9ba1b' },
+        3: { color: '#e7e9ed' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { isHtml: true, textStyle: { color: '#fff' } }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutmarinos2b')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartmoluscosMarinos3);
+
+  function ChartmoluscosMarinos3() {
+    var data = google.visualization.arrayToDataTable([
+      ['Especies estimadas', 'Número de especies'],
+      ['Apéndice I', 0],
+      ['Apéndice II', 1],
+      ['Apéndice III', 0]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.7,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '180', height: '180' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#238ED9' },
+        1: { color: '#A2C754' },
+        2: { color: '#E8702F' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { trigger: 'none' }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutmarinos3')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartmoluscosMarinos3b);
+
+  function ChartmoluscosMarinos3b() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Título');
+    data.addColumn('number', 'Especies');
+    data.addColumn({ type: 'string', role: 'tooltip', p: { html: true } });
+    data.addRows([
+      [
+        'Apéndice I en SiB',
+        0,
+        '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      [
+        'Apéndice II en SiB',
+        0,
+        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: En construcción</br>Registros: En construcción</div>'
+      ],
+      [
+        'Apéndice III en SiB',
+        0,
+        '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      ['Especies sin datos SiB Colombia', 0, '']
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.9,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '222', height: '222' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#238ED9' },
+        1: { color: '#A2C754' },
+        2: { color: '#E8702F' },
+        3: { color: '#e7e9ed' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { isHtml: true, textStyle: { color: '#fff' } }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutmarinos3b')
+    );
+    chart.draw(data, options);
+  }
+});
+
+$('.terrestres').on('click', function() {
+  $('.grapharea').css('display', 'none');
+  $('.graph_terrestres').css('display', 'block');
+
+  // pie de literatura especies hormigas
+  google.charts.setOnLoadCallback(ChartmoluscosTerrestres1);
+
+  function ChartmoluscosTerrestres1() {
+    var data = google.visualization.arrayToDataTable([
+      ['Especies estimadas', 'Número de especies'],
+      ['Representatividad de especies', 650]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.7,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '180', height: '180' },
+      pieSliceBorderColor: 'none',
+      slices: { 0: { color: '#4BC0C0' } },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { trigger: 'none' }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutterrestres1')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartmoluscosTerrestres1b);
+
+  function ChartmoluscosTerrestres1b() {
+    var data = google.visualization.arrayToDataTable([
+      ['Titulo', 'SiB'],
+      ['Especies con evidencia en el SiB Colombia', 0],
+      ['Especies sin datos SiB Colombia', 0]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.9,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '222', height: '222' },
+      pieSliceBorderColor: 'none',
+      slices: { 0: { color: '#2B4143' }, 1: { color: '#e7e9ed' } },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { isHtml: true, textStyle: { color: '#fff' } }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutterrestres1b')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartmoluscosTerrestres2);
+
+  function ChartmoluscosTerrestres2() {
+    var data = google.visualization.arrayToDataTable([
+      ['Especies estimadas', 'Número de especies'],
+      ['En peligro crítico', 0],
+      ['En peligro', 0],
+      ['Vulnerable', 0]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.7,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '180', height: '180' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#d51920' },
+        1: { color: '#f47d20' },
+        2: { color: '#f9ba1b' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { trigger: 'none' }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutterrestres2')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartmoluscosTerrestres2b);
+
+  function ChartmoluscosTerrestres2b() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Título');
+    data.addColumn('number', 'Especies');
+    data.addColumn({ type: 'string', role: 'tooltip', p: { html: true } });
+    data.addRows([
+      [
+        'En peligro crítico SiB',
+        0,
+        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      [
+        'En peligro SiB',
+        0,
+        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      [
+        'Vulnerable SiB',
+        0,
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      ['Especies sin datos SiB Colombia', 0, '']
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.9,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '222', height: '222' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#d51920' },
+        1: { color: '#f47d20' },
+        2: { color: '#f9ba1b' },
+        3: { color: '#e7e9ed' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { isHtml: true, textStyle: { color: '#fff' } }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutterrestres2b')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartmoluscosTerrestres3);
+
+  function ChartmoluscosTerrestres3() {
+    var data = google.visualization.arrayToDataTable([
+      ['Especies estimadas', 'Número de especies'],
+      ['Apéndice I', 0],
+      ['Apéndice II', 0],
+      ['Apéndice III', 0]
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.7,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '180', height: '180' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#238ED9' },
+        1: { color: '#A2C754' },
+        2: { color: '#E8702F' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { trigger: 'none' }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutterrestres3')
+    );
+    chart.draw(data, options);
+  }
+
+  google.charts.setOnLoadCallback(ChartmoluscosTerrestres3b);
+
+  function ChartmoluscosTerrestres3b() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Título');
+    data.addColumn('number', 'Especies');
+    data.addColumn({ type: 'string', role: 'tooltip', p: { html: true } });
+    data.addRows([
+      [
+        'Apéndice I en SiB',
+        0,
+        '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      [
+        'Apéndice II en SiB',
+        0,
+        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      [
+        'Apéndice III en SiB',
+        0,
+        '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+      ],
+      ['Especies sin datos SiB Colombia', 0, '']
+    ]);
+
+    var options = {
+      titlePosition: 'none',
+      pieHole: 0.9,
+      backgroundColor: 'transparent',
+      legend: { position: 'none' },
+      chartArea: { width: '222', height: '222' },
+      pieSliceBorderColor: 'none',
+      slices: {
+        0: { color: '#238ED9' },
+        1: { color: '#A2C754' },
+        2: { color: '#E8702F' },
+        3: { color: '#e7e9ed' }
+      },
+      sliceVisibilityThreshold: '0',
+      fontSize: '12',
+      pieSliceText: 'none',
+      tooltip: { isHtml: true, textStyle: { color: '#fff' } }
+    };
+
+    var chart = new google.visualization.PieChart(
+      document.getElementById('donutterrestres3b')
+    );
+    chart.draw(data, options);
+  }
+});
+
 //show hide otras graficas
 
 function showDivspp1() {
